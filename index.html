@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tactics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tactics">Tactics</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Master Your Chess Tactics</h1>
+            <p>Utilize our interactive resources to enhance your chess strategy.</p>
+        </section>
+    </header>
+    <main>
+        <section id="tactics">
+            <h2>Chess Tactics Grid</h2>
+            <div class="tactics-grid">
+                <div class="tactic-card" onclick="openModal('tactic1')">
+                    <h3>Tactic 1</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic2')">
+                    <h3>Tactic 2</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic3')">
+                    <h3>Tactic 3</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic4')">
+                    <h3>Tactic 4</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic5')">
+                    <h3>Tactic 5</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic6')">
+                    <h3>Tactic 6</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic7')">
+                    <h3>Tactic 7</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic8')">
+                    <h3>Tactic 8</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic9')">
+                    <h3>Tactic 9</h3>
+                    <p>Brief Description</p>
+                </div>
+                <div class="tactic-card" onclick="openModal('tactic10')">
+                    <h3>Tactic 10</h3>
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </section>
+        <div id="chessboardModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="chessboard">
+                    <!-- Interactive chessboard will be here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Chess Tactics Website. All rights reserved.</p>
+    </footer>
+    <script>
+        function openModal(tactic) {
+            document.getElementById('chessboardModal').style.display = 'block';
+            // Load the specific tactic content dynamically
+        }
+        function closeModal() {
+            document.getElementById('chessboardModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
