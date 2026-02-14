@@ -67,4 +67,26 @@ function handleSquareClick(e) {
         selectedPiece = null;
     }
 }
+<div class="square" id="a1">
+    <img src="pieces/rook.png" class="piece">
+</div>
+document.querySelectorAll('.square')
+class="piece"
+if (square.classList.contains('piece'))
+let selectedPiece = null;
 
+document.querySelectorAll('.square').forEach(square => {
+    square.addEventListener('click', function () {
+        // If clicking a piece, select it
+        if (this.firstElementChild && this.firstElementChild.classList.contains('piece')) {
+            selectedPiece = this.firstElementChild;
+            return;
+        }
+
+        // If a piece is selected, move it here
+        if (selectedPiece) {
+            this.appendChild(selectedPiece);
+            selectedPiece = null;
+        }
+    });
+});
