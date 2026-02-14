@@ -3,45 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Tactics Website</title>
+    <title>Interactive Chess Board</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="chessboard-setup.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Chess Tactics</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#learning-path">Learning Path</a></li>
-                <li><a href="#tactics">Tactics</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Chess Tactics</h2>
-            <p>Chess tactics are short-term sequences of moves that help players gain an advantage over their opponents. This site offers a comprehensive interface to learn and practice various chess tactics.</p>
-        </section>
-        <section id="learning-path">
-            <h2>Your Learning Path</h2>
-            <p>Follow a structured approach to master chess tactics through interactive lessons and practice exercises.</p>
-        </section>
-        <section id="tactics">
-            <h2>Interactive Chess Tactics</h2>
-            <div class="tactic-demo" onclick="loadTactic('tactic1')">
-                <h3>Tactic 1: Fork</h3>
-                <p>Click here to learn how to exploit forks in chess!</p>
-            </div>
-            <div class="tactic-demo" onclick="loadTactic('tactic2')">
-                <h3>Tactic 2: Pin</h3>
-                <p>Click here to learn how to use pins in your games!</p>
-            </div>
-            <!-- Add more tactics as needed -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Chess Tactics. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <h1>Chess Tactics Demonstration</h1>
+    <div id="chess-board"></div>
+    <div id="tactics"></div>
+    
+    <script>
+        // Code for interactive chess pieces moves and animations goes here
+    </script>
 </body>
 </html>
