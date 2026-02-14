@@ -51,3 +51,20 @@ function setupNavigation() {
 // Initialize Chessboard and Navigation
 const chessboard = new Chessboard();
 setupNavigation();
+document.querySelectorAll('.square').forEach(square => {
+    square.addEventListener('click', handleSquareClick);
+});
+let selectedPiece = null;
+function handleSquareClick(e) {
+    const square = e.target;
+
+    if (square.classList.contains('piece')) {
+        selectedPiece = square;
+        return;
+    }
+    if (selectedPiece) {
+        square.appendChild(selectedPiece);
+        selectedPiece = null;
+    }
+}
+
